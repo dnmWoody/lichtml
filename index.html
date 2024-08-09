@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuestionario</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cuestionario de Seguridad Vial</h1>
+
+    <p><b>Importante!</b> Las preguntas con (*) son de caracter eliminatorio.</p>
+
+    <!--Pregunta 1-->
+    <div class="question" id="question1"> 
+        <p class="encuesta">1- (*) El uso de casco para circular en moto es:</p>
+        <div class="option" onclick="selectOption(1, 'A')">A- Optativo para el conductor y acompañante.</div>
+        <div class="option" onclick="selectOption(1, 'B')">B- Obligatorio solo para el conductor y no para el acompañante.</div>
+        <div class="option" onclick="selectOption(1, 'C')">C- Obligatorio para el conductor y para el acompañante.</div>
+    </div>
+
+    <!--Pregunta 2-->
+    <div class="question" id="question2">
+        <p>2- ¿Cuál es la velocidad máxima para una moto en un camino zona rural (ruta)?</p>
+        <div class="option" onclick="selectOption(2, 'A')">A- 110 km/h</div>
+        <div class="option" onclick="selectOption(2, 'B')">B- 130 km/h</div>
+        <div class="option" onclick="selectOption(2, 'C')">C- 120 km/h</div>
+    </div>
+
+    <!--Pregunta 3-->
+    <div class="question" id="question3">
+        <p>3- Cuál es la velocidad mínima para las motos en una autopista?</p>
+        <div class="option" onclick="selectOption(3, 'A')">A- 60 km/h</div>
+        <div class="option" onclick="selectOption(3, 'B')">B- 65 km/h</div>
+        <div class="option" onclick="selectOption(3, 'C')">C- 40 km/h</div>
+    </div>
+
+    <!--Pregunta 4-->
+    <div class="question" id="question4">
+        <p>4- Cuál es la profundidad mínima que tiene que tener los canales de la banda de rodamiento de los neumáticos de las motocicletas?</p>
+        <div class="option" onclick="selectOption(4, 'A')">A- 1.0 mm</div>
+        <div class="option" onclick="selectOption(4, 'B')">B- 1.6 mm</div>
+        <div class="option" onclick="selectOption(4, 'C')">C- 0.5 mm</div>
+    </div>
+
+    <!--Pregunta 5-->
+    <div class="question" id="question5">
+        <p>5- ¿Cuál es la velocidad mínima para las motos en un camino zona rural?</p>
+        <div class="option" onclick="selectOption(5, 'A')">A- 65 km/h</div>
+        <div class="option" onclick="selectOption(5, 'B')">B- 60 km/h</div>
+        <div class="option" onclick="selectOption(5, 'C')">C- 40 km/h</div>
+    </div>
+
+    <!--Pregunta 6-->
+    <div class="question" id="question6">
+        <p>6- Determine cuál de estas señales indica ROTONDA.</p>
+        <div class="image-container">
+            <img src="images/S1.png" class="image-option" onclick="selectImage(6, '1')" alt="Señal 1">
+            <img src="images/S2.png" class="image-option" onclick="selectImage(6, '2')" alt="Señal 2">
+            <img src="images/S3.png" class="image-option" onclick="selectImage(6, '3')" alt="Señal 3">
+            <img src="images/S4.png" class="image-option" onclick="selectImage(6, '4')" alt="Señal 4">
+            <img src="images/S5.png" class="image-option" onclick="selectImage(6, '5')" alt="Señal 5">
+        </div>
+    </div>
+
+    <!--Pregunta 7-->
+    <div class="question" id="question7">
+        <p class="encuesta">7- (*) ¿Qué representa las cinco puntas de la ESTRELLA AMARILLA?.</p>
+        <div class="option" onclick="selectOption(7, 'A')">A- Memoria, Justicia, Vìctimas, Educaciòn y Ley.</div>
+        <div class="option" onclick="selectOption(7, 'B')">B- Valores, Accidente, Vìctimas, Ley y Prevención.</div>
+        <div class="option" onclick="selectOption(7, 'C')">C- Memoria, Prevención, Ley, Justicia y Educación. </div>
+    </div>
+
+    <!--Pregunta 8-->
+    <div class="question" id="question8">
+        <p>8- Qué tipo de seguro se exige para la circualción de la motocicleta?</p>
+        <div class="option" onclick="selectOption(8, 'A')">A- Que cubra daños causados a terceros, transportados o no.</div>
+        <div class="option" onclick="selectOption(8, 'B')">B- De responsabilidad civil, robo e incendio.</div>
+        <div class="option" onclick="selectOption(8, 'C')">C- Contra todo riesgo.</div>
+    </div>
+
+    <!--Pregunta 9-->
+    <div class="question" id="question9">
+        <p>9- Marcar 3 elementos de seguridad Activa según corresponda:</p>
+        <div class="option" onclick="selectMultipleOptions(9, 'A')">A- Dirección</div>
+        <div class="option" onclick="selectMultipleOptions(9, 'B')">B- Neumáticos</div>
+        <div class="option" onclick="selectMultipleOptions(9, 'C')">C- Casco</div>
+        <div class="option" onclick="selectMultipleOptions(9, 'D')">D- Chaleco</div>
+        <div class="option" onclick="selectMultipleOptions(9, 'E')">E- Matafuego</div>
+        <div class="option" onclick="selectMultipleOptions(9, 'F')">F- Suspensión</div>
+    </div>
+
+    <!--Pregunta 10-->
+    <div class="question" id="question10">
+        <p class="encuesta">10- (*) ¿Cuàl es la Ley de Tránsito y su modificatoria?.</p>
+        <div class="option" onclick="selectOption(10, 'A')">A- 24449 y 26363</div>
+        <div class="option" onclick="selectOption(10, 'B')">B- 24449 y 26663</div>
+        <div class="option" onclick="selectOption(10, 'C')">C- 24449 y 26633</div>
+    </div>
+    
+    <!--Pregunta 11-->
+    <div class="question" id="question11">
+        <p>11- La circulación de una motocicleta por la vereda: </p>
+        <div class="option" onclick="selectOption(11, 'A')">A- Estará solo permitida para ingresar en linea recta a un garage.</div>
+        <div class="option" onclick="selectOption(11, 'B')">B- Se podrá realizar solo hasta 50mts.</div>
+        <div class="option" onclick="selectOption(11, 'C')">C- Al igual que las bicicletas se podrá realizar normalmente.</div>
+    </div>
+
+    <!--Pregunta 12-->
+    <div class="question" id="question12">
+        <p class="encuesta">12- (*) ¿Porque la ESTRELLA es de color amarillo?.</p>
+        <div class="option" onclick="selectOption(12, 'A')">A- Significa luz, algo que ilumine y prevención.</div>
+        <div class="option" onclick="selectOption(12, 'B')">B- Solo prevención.</div>
+        <div class="option" onclick="selectOption(12, 'C')">C- Nos indica peligro.</div>
+    </div>
+
+    <!--Pregunta 13-->
+    <div class="question" id="question13">
+        <p>13- Determine cuál de estas señales indica EXCLUSIVO MOTO.</p>
+        <div class="image-container">
+            <img src="images/SM1.png" class="image-option" onclick="selectImage(13, '1')" alt="Señal1">
+            <img src="images/SM2.png" class="image-option" onclick="selectImage(13, '2')" alt="Señal2">
+            <img src="images/SM3.png" class="image-option" onclick="selectImage(13, '3')" alt="Señal3">
+            <img src="images/SM4.png" class="image-option" onclick="selectImage(13, '4')" alt="Señal4">
+            <img src="images/SM5.png" class="image-option" onclick="selectImage(13, '5')" alt="Señal5">
+        </div>
+    </div>
+
+    <!--Pregunta 14-->
+    <div class="question" id="question14">
+        <p class="encuesta">14- (*) ¿Cuál es el máximo de alcoholemia admitido de acuerdo a la Ley Nacional N°27714 del art.48 de la Ley 24449 aprobada el 03/05/2023 para conducir una moto??.</p>
+        <div class="option" onclick="selectOption(14, 'A')">A- 0.2gr por litro de sangre.</div>
+        <div class="option" onclick="selectOption(14, 'B')">B- 0.5gr por litro de sangre.</div>
+        <div class="option" onclick="selectOption(14, 'C')">C- 0.0gr por litro de sangre.</div>
+    </div>
+    
+    <!--Pregunta 15-->
+    <div class="question" id="question15">
+        <p>15- Cuánto es el máximo permitido de carga que puede transportar un motociclista?: </p>
+        <div class="option" onclick="selectOption(15, 'A')">A- 50kg</div>
+        <div class="option" onclick="selectOption(15, 'B')">B- 120kg</div>
+        <div class="option" onclick="selectOption(15, 'C')">C- 100kg</div>
+    </div>
+
+    <!--Pregunta 16-->
+    <div class="question" id="question16">
+        <p class="encuesta">16- (*) ¿Cuál es el máximo de acompañantes que se puede transportar en una motocicleta?.</p>
+        <div class="option" onclick="selectOption(16, 'A')">A- 1 acompañante.</div>
+        <div class="option" onclick="selectOption(16, 'B')">B- 2 acompañantes.</div>
+        <div class="option" onclick="selectOption(16, 'C')">C- No puede llevar acompañantes.</div>
+    </div>
+
+    <!--Pregunta 17-->
+    <div class="question" id="question17">
+        <p>17- Si usted cuenta con un casco para conducir su motocicleta que no cuenta con visera ¿Lo puede utilizar?</p>
+        <div class="option" onclick="selectOption(17, 'A')">A- Si.</div>
+        <div class="option" onclick="selectOption(17, 'B')">B- Solo si acompaña con los anteojos de seguridad.</div>
+        <div class="option" onclick="selectOption(17, 'C')">C- No se podrá utilizar en ningún caso.</div>
+    </div>
+
+    <!--Pregunta 18-->
+    <div class="question" id="question18">
+        <p class="encuesta">18- (*) ¿Cómo debe indicar a un vehiculo que pretende sobrepasar al suyo que NO debe hacerlo?.</p>
+        <div class="option" onclick="selectOption(18, 'A')">A- Accionando la luz indicadora con giro a la izquierda.</div>
+        <div class="option" onclick="selectOption(18, 'B')">B- Accionando la luz indicadora con giro a la derecha.</div>
+        <div class="option" onclick="selectOption(18, 'C')">C- Encendiendo las balizas.</div>
+    </div>
+
+    <!--Pregunta 19-->
+    <div class="question" id="question19">
+        <p>19- Cuál es la profundida mìnima que tiene que tener los canales de la banda de rodamiento de los neumaticos de los ciclomotores?</p>
+        <div class="option" onclick="selectOption(19, 'A')">A- 1.6mm</div>
+        <div class="option" onclick="selectOption(19, 'B')">B- 1.0mm</div>
+        <div class="option" onclick="selectOption(19, 'C')">C- 0.5mm</div>
+    </div>
+
+    <!--Pregunta 20-->
+    <div class="question" id="question20">
+        <p class="encuesta">20- (*) Ante la presencia de un semáforo con su luz roja encendida deberá detener su motocicleta:</p>
+        <div class="option" onclick="selectOption(20, 'A')">A- Por delante de la senda peatonal.</div>
+        <div class="option" onclick="selectOption(20, 'B')">B- Sobre la senda peatonal.</div>
+        <div class="option" onclick="selectOption(20, 'C')">C- Antes de la senda peatonal.</div>
+        <div class="option" onclick="selectOption(20, 'D')">D- Por ser una Motocicleta lo podrá hacer en cualqueir lugar..</div>
+    </div>
+
+    <!--Pregunta 21-->
+    <div class="question" id="question21">
+        <p>21- Cuál es la velocidad mínima para los ciclomotores en una autopista?</p>
+        <div class="option" onclick="selectOption(21, 'A')">A- 40 km/h</div>
+        <div class="option" onclick="selectOption(21, 'B')">B- 65 km/h</div>
+        <div class="option" onclick="selectOption(21, 'C')">C- Estará prohibida la circulación.</div>
+    </div>
+
+    <!--Pregunta 22-->
+    <div class="question" id="question22">
+        <p>22- Determine cuál de estas señales indica carril PROHIBIDO CIRCULAR MOTOCICLETAS:</p>
+        <div class="image-container">
+            <img src="images/SMProh1.png" class="image-option" onclick="selectImage(22, '1')" alt="Señal 1">
+            <img src="images/SMProh2.png" class="image-option" onclick="selectImage(22, '2')" alt="Señal 2">
+            <img src="images/SMProh3.png" class="image-option" onclick="selectImage(22, '3')" alt="Señal 3">
+            <img src="images/SMProh4.png" class="image-option" onclick="selectImage(22, '4')" alt="Señal 4">
+            <img src="images/SMProh5.png" class="image-option" onclick="selectImage(22, '5')" alt="Señal 5">
+        </div>
+    </div>
+
+    <!--Pregunta 23-->
+    <div class="question" id="question23">
+        <p class="encuesta">23- (*) La Estrella Amarilla es?</p>
+        <div class="option" onclick="selectOption(23, 'A')">A- Es una señal.</div>
+        <div class="option" onclick="selectOption(23, 'B')">B- Es un símbolo.</div>
+    </div>
+
+    <!--Pregunta 24-->
+    <div class="question" id="question24">
+        <p>24- ¿Qué significa esta señal?</p>
+        <div class="image-container">
+            <img src="images/S6.png" class="image-option" alt="Señal 1">
+            <div class="option" onclick="selectOption(24, 'A')">A- Ancho limitado.</div>
+            <div class="option" onclick="selectOption(24, 'B')">B- Altura limitada.</div>
+            <div class="option" onclick="selectOption(24, 'C')">C- Tùnel.</div>
+        </div>
+    </div>
+
+    <!--Pregunta 25-->
+    <div class="question" id="question25">
+        <p class="encuesta">25- (*) ¿Qué significa esta señal?</p>
+        <div class="image-container">
+            <img src="images/SP1.png" class="image-option" alt="Señal 1">
+            <div class="option" onclick="selectOption(25, 'A')">A- Detención obligatoria.</div>
+            <div class="option" onclick="selectOption(25, 'B')">B- Precaución, bocacalle.</div>
+            <div class="option" onclick="selectOption(25, 'C')">C- Ceda el paso.</div>
+        </div>
+    </div>
+
+    <!--Pregunta 26-->
+    <div class="question" id="question26">
+        <p>26- ¿Qué significa esta señal?</p>
+        <div class="image-container">
+            <img src="images/SP2.png" class="image-option" alt="Señal 1">
+            <div class="option" onclick="selectOption(26, 'A')">A- Contramano.</div>
+            <div class="option" onclick="selectOption(26, 'B')">B- Zona escolar.</div>
+            <div class="option" onclick="selectOption(26, 'C')">C- Cruce peatones.</div>
+        </div>
+    </div>
+
+    <!--Pregunta 27-->
+    <div class="question" id="question27">
+        <p class="encuesta">27- (*) Cuando NO hay senda peatonal marcada en la calzada ¿Por donde deben cruzar los peatones?</p>
+            <div class="option" onclick="selectOption(27, 'A')">A- A mitad de cuadra.</div>
+            <div class="option" onclick="selectOption(27, 'B')">B- Que coincide con la parada de transporte.</div>
+            <div class="option" onclick="selectOption(27, 'C')">C- Por la esquina.</div>
+        </div>
+
+    <!--Pregunta 28-->
+    <div class="question" id="question28">
+        <p class="encuesta">28- (*) De acuerdo a la Ley Provincial N°84 cuál es el máximo permitido de alcoholemia para circular en vehículos en nuestra provincia.</p>
+        <div class="option" onclick="selectOption(28, 'A')">A- 0.2gr por litro de sangre.</div>
+        <div class="option" onclick="selectOption(28, 'B')">B- 0.5gr por litro de sangre.</div>
+        <div class="option" onclick="selectOption(28, 'C')">C- 0.0gr por litro de sangre.</div>
+    </div>
+    
+
+    <!--Pregunta 29-->
+    <div class="question" id="question29">
+        <p>29- Determine cuál de estas señales indica Incorporación al tránsito lateral:.</p>
+        <div class="image-container">
+            <img src="images/S1.png" class="image-option" onclick="selectImage(29, '1')" alt="Señal 1">
+            <img src="images/S2.png" class="image-option" onclick="selectImage(29, '2')" alt="Señal 2">
+            <img src="images/S4.png" class="image-option" onclick="selectImage(29, '3')" alt="Señal 3">
+            <img src="images/S3.png" class="image-option" onclick="selectImage(29, '4')" alt="Señal 4">
+            <img src="images/S5.png" class="image-option" onclick="selectImage(29, '5')" alt="Señal 5">
+        </div>
+    </div>
+
+    <!--Pregunta 30-->
+    <div class="question" id="question30">
+        <p class="encuesta">30- (*) ¿Cómo evita un choque frontal?.</p>
+            <div class="option" onclick="selectOption(30, 'A')">A- Reducir la velocidad, desviarse a la derecha, y hacer juego de luces.</div>
+            <div class="option" onclick="selectOption(30, 'B')">B- Hacer la señal que corresponde.</div>
+            <div class="option" onclick="selectOption(30, 'C')">C- Desviarse al carril izquierdo.</div>
+        </div>
+
+    <!--Pregunta 31-->
+    <div class="question" id="question31">
+        <p>31- La mejor vestimenta para que lo vean de noche es:</p>
+        <div class="option" onclick="selectOption(31, 'A')">A- Ropa fluorescente.</div>
+        <div class="option" onclick="selectOption(31, 'B')">B- Un casco blanco.</div>
+        <div class="option" onclick="selectOption(31, 'C')">C- Ropa reflectante.</div>
+        <div class="option" onclick="selectOption(31, 'D')">D- Una chaqueta roja.</div>
+    </div>
+
+    <!--Pregunta 32-->
+    <div class="question" id="question32">
+        <p>32- Determine cuál de estas señales indica PROHIBIDO AVANZAR.</p>
+        <div class="image-container">
+            <img src="images/SM3.png" class="image-option" onclick="selectImage(32, '1')" alt="Señal 1">
+            <img src="images/SMProh1.png" class="image-option" onclick="selectImage(32, '2')" alt="Señal 2">
+            <img src="images/SP2.png" class="image-option" onclick="selectImage(32, '3')" alt="Señal 3">
+            <img src="images/SM5.png" class="image-option" onclick="selectImage(32, '4')" alt="Señal 4">
+            <img src="images/SM4.png" class="image-option" onclick="selectImage(32, '5')" alt="Señal 5">
+        </div>
+    </div>
+
+
+    <div class="feedback" id="feedback">Por favor, responde todas las preguntas antes de finalizar.</div>
+    <button id="finishBtn" onclick="finishQuiz()">FINALIZAR</button>
+    <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

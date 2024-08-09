@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;   
+    font-weight: bolder;
+
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.encuesta{
+    font-weight: bolder;
+    color: red;
+}
+
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.option.selected {
+    background-color: #e2e2e2;
+    border-color: #007bff;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+    display: none;
+    text-align: center;
+}
+
+#finishBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#finishBtn:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#progress {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+ /* Estilo para las imágenes */
+.image-option {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    /*margin: 10px;*/
+}
+
+.image-option.selected {
+    border-color: #007bff;
+}
+
+.image-container {
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    #finishBtn {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 10px;
+    }
+}
